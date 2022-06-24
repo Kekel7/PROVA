@@ -1,14 +1,30 @@
+import Title from './App.css';
 
 
 function App() {
-  
-  return (
-    <div>
-      <h1>Hello Batata</h1>
-       
-    </div>
-  
-  )
+	
+
+	const processo =[
+		{
+			nome: "Processos",
+			coment: "Processos Relacionados ao combate do COVID 19", 
+		}
+
+	]
+
+	return (
+		<div>
+			<Title />
+			
+			{processo.map ((Processos) =>{
+				return <Perfil 
+
+							nome={Processos.nome} 
+							coment={Processos.coment}/>
+			})}
+
+		</div>
+	);
 }
 
-export default App
+export default App.css;
